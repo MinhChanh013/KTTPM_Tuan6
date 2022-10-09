@@ -1,6 +1,6 @@
-package com.example.ktpm_tuan05.controller.config;
+package com.example.ktpm_tuan06.controller.config;
 
-import com.example.ktpm_tuan05.filter.JwtRequestFilter;
+import com.example.ktpm_tuan06.filter.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

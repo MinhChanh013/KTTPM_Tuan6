@@ -1,6 +1,6 @@
-package com.example.ktpm_tuan05.util;
+package com.example.ktpm_tuan06.util;
 
-import com.example.ktpm_tuan05.authen.UserPrincipal;
+import com.example.ktpm_tuan06.authen.UserPrincipal;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nimbusds.jose.*;
 import com.nimbusds.jose.crypto.MACSigner;

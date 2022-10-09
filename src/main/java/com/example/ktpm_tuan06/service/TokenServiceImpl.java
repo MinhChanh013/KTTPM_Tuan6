@@ -1,7 +1,7 @@
-package com.example.ktpm_tuan05.service;
+package com.example.ktpm_tuan06.service;
 
-import com.example.ktpm_tuan05.entity.Token;
-import com.example.ktpm_tuan05.repository.TokenRepository;
+import com.example.ktpm_tuan06.entity.Token;
+import com.example.ktpm_tuan06.repository.TokenRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

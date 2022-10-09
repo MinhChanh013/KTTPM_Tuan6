@@ -1,8 +1,9 @@
-package com.example.ktpm_tuan05.service;
-import com.example.ktpm_tuan05.authen.UserPrincipal;
-import com.example.ktpm_tuan05.entity.User;
-import com.example.ktpm_tuan05.repository.UserRepository;
+package com.example.ktpm_tuan06.service;
+import com.example.ktpm_tuan06.authen.UserPrincipal;
+import com.example.ktpm_tuan06.entity.User;
+import com.example.ktpm_tuan06.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -13,7 +14,7 @@ import java.util.Set;
 @Service
 public class UserServiceImpl implements UserService {
 
-    @Autowired
+	@Autowired
     private UserRepository userRepository;
 
     @Override
@@ -21,6 +22,10 @@ public class UserServiceImpl implements UserService {
         return userRepository.saveAndFlush(user);
     }
 
+    
+    
+    
+    
     @Override
     public UserPrincipal findByUsername(String username) {
         User user = userRepository.findByUsername(username);
@@ -44,9 +49,12 @@ public class UserServiceImpl implements UserService {
             userPrincipal.setAuthorities(authorities);
 
         }
-
         return userPrincipal;
-
     }
+    
+//    @Query("UPDATE t_user SET password = ?1 WHERE username = ?2")
+	@Override
+	public void updatePass(String pass, String userName) {
+	}
 
 }

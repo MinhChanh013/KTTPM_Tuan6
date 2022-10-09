@@ -1,6 +1,6 @@
-package com.example.ktpm_tuan05.repository;
+package com.example.ktpm_tuan06.repository;
 
-import com.example.ktpm_tuan05.entity.User;
+import com.example.ktpm_tuan06.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UserRepository

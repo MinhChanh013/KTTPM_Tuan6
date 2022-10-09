@@ -1,4 +1,4 @@
-package com.example.ktpm_tuan05.entity;
+package com.example.ktpm_tuan06.entity;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -20,4 +20,33 @@ public class Role extends BaseEntity {
     @OneToMany(cascade = CascadeType.REFRESH, fetch = FetchType.EAGER)
     @JoinTable(name = "t_role_permission", joinColumns = {@JoinColumn(name = "role_id")}, inverseJoinColumns = {@JoinColumn(name = "permission_id")})
     private Set<Permission> permissions = new HashSet<>();
+
+	public String getRoleName() {
+		return roleName;
+	}
+
+	public void setRoleName(String roleName) {
+		this.roleName = roleName;
+	}
+
+	public String getRoleKey() {
+		return roleKey;
+	}
+
+	public void setRoleKey(String roleKey) {
+		this.roleKey = roleKey;
+	}
+
+	public Set<Permission> getPermissions() {
+		return permissions;
+	}
+
+	public void setPermissions(Set<Permission> permissions) {
+		this.permissions = permissions;
+	}
+    
+    
+    
+    
+    
 }
